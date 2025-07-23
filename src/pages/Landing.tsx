@@ -1,7 +1,8 @@
+```typescript
 // src/pages/Landing.tsx
 
 import React, { useState, useEffect } from 'react';
-import { Heart, Shield, Clock, Users, Star, User, Calendar, Phone, Mail, MapPin, Stethoscope, Activity } from 'lucide-react';
+import { Heart, Shield, Users, Star, User, Calendar, Phone, Mail, MapPin, Stethoscope, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Container, Button, Card, CardContent, Badge, Header, Nav, Section, Span, H1, H2, P, Div, Footer } from '../lib/dev-container';
 import { useAuth } from '../components/auth/AuthProvider';
@@ -416,7 +417,7 @@ export const Landing: React.FC = () => {
                 Schedule your visit with Dr. Mike. Fill out the form below and we'll contact you to confirm your appointment.
               </P>
             </Div>
-            <Card className="bg-white rounded-2xl shadow-xl border border-gray-100">
+            <Card devId="noID" className="bg-white rounded-2xl shadow-xl border border-gray-100">
               <CardContent devId="noID" className="p-8">
                 <form onSubmit={handleAppointmentSubmit} className="space-y-6">
                   <Div devId="noID" className="grid md:grid-cols-2 gap-6">
@@ -577,3 +578,4 @@ export const Landing: React.FC = () => {
     </Container>
   );
 };
+```
